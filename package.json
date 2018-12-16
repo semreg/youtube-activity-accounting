@@ -1,0 +1,34 @@
+{
+  "name": "youtube-activity-accounting",
+  "version": "1.0.0",
+  "description": "MERN Stack app for youtube activity accounting",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "server-dev": "nodemon server",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\"",
+    "build": "npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Semreg/youtube-activity-accounting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Semreg/youtube-activity-accounting/issues"
+  },
+  "homepage": "https://github.com/Semreg/youtube-activity-accounting#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.9"
+  }
+}
